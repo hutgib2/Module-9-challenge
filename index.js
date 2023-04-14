@@ -13,6 +13,7 @@ function writeToFile(fileName, data) {
     });
 }
 
+
 // TODO: Create a function to initialize app
 function init() {
 
@@ -83,6 +84,8 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
                 
                 
             }else if (response.license === 'apache'){
+
+                
                 licensebadge = `[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)`
                 license = `TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
 
@@ -166,7 +169,7 @@ ${response.testInstruction}
             
 ## Questions
 contact me on github
-@${response.githubUsername}
+@[${response.githubUsername}](https://github.com/${response.githubUsername})
             
 or email
 ${response.email}`;
